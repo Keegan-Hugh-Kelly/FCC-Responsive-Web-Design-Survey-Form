@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form | FCC</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We would love to hear your feedback. Please fill out this form.</p>
+    
+    <form id="survey-form">
+      <!-- Name Input -->
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+      <!-- Email Input -->
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Number Input -->
+      <label id="number-label" for="number">Age:</label>
+      <input type="number" id="number" name="age" placeholder="Enter your age" min="1" max="120" required>
+
+      <!-- Dropdown -->
+      <label for="dropdown">Which option best describes you?</label>
+      <select id="dropdown" name="role" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="student">Student</option>
+        <option value="professional">Professional</option>
+        <option value="other">Other</option>
+      </select>
+      
+      <!-- Radio Buttons -->
+      <p>Would you recommend our service?</p>
+      <div class="radio-container">
+        <input type="radio" id="definitely" name="recommend" value="definitely" required>
+        <label for="definitely">Definitely</label>
+      </div>
+      <div class="radio-container">
+        <input type="radio" id="maybe" name="recommend" value="maybe" required>
+        <label for="maybe">Maybe</label>
+      </div>
+      <div class="radio-container">
+        <input type="radio" id="not-sure" name="recommend" value="not-sure" required>
+        <label for="not-sure">Not sure</label>
+      </div>
+
+      <!-- Checkboxes -->
+      <p>Select your favorite activities:</p>
+      <div class="checkbox-container">
+        <input type="checkbox" id="coding" name="activity" value="coding">
+        <label for="coding">Coding</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="reading" name="activity" value="reading">
+        <label for="reading">Reading</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="sports" name="activity" value="sports">
+        <label for="sports">Sports</label>
+      </div>
+
+      <!-- Textarea -->
+      <label for="comments">Any comments or suggestions:</label>
+      <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+
+      <!-- Submit Button -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
